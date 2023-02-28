@@ -42,7 +42,7 @@ public class HelloApplication extends Application {
 
          */
 
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Ass.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 640, 480);
         stage.setTitle("Cum Button");
 
@@ -51,7 +51,7 @@ public class HelloApplication extends Application {
         stage.setScene(scene);
         stage.show();
     }
-    public static void main(String args[]) {
+    public static void main(String[] args) {
         launch(args);
     }
 }
