@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cum.HelloController">
+   <children>
+      <MenuBar layoutY="1.0" prefWidth="640.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#onSelectImageClick" text="Select image..." />
+              <MenuItem mnemonicParsing="false" onAction="#onCloseButtonClick" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#onChangeButtonClick" text="Swap Pic" />
+              <MenuItem mnemonicParsing="false" text="Delete" onAction="#onDeleteButtonClick"/>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" onAction="#onHelpButtonClick"/>
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="ass" layoutX="306.0" layoutY="112.0" text="*crie*" />
+      <ImageView fx:id="mark" fitHeight="150.0" fitWidth="200.0" layoutX="230.0" layoutY="165.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="165.0" AnchorPane.leftAnchor="230.0" AnchorPane.rightAnchor="230.0" AnchorPane.topAnchor="165.0">
+         <image>
+            <Image url="@../../../../../../../../../../../GUIPics/MarkSadge.jpg" />
+         </image>
+      </ImageView>
+       <Button layoutX="287.0" layoutY="336.0" onAction="#onChangeButtonClick" text="Fuck You">
+           <font>
+               <Font name="Comic Sans MS" size="12.0" />
+           </font></Button>
+   </children>
+</AnchorPane>
